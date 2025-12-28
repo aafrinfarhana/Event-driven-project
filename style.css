@@ -28,12 +28,12 @@ body {
   padding: 10px;
 }
 .option.correct {
-  background-color: #4CAF50; /* green */
+  background-color: #4CAF50; 
   color: white;
 }
 
 .option.wrong {
-  background-color: #f44336; /* red */
+  background-color: #f44336; 
   color: white;
 }
 

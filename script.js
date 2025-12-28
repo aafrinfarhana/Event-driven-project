@@ -30,7 +30,7 @@ function loadQuestion() {
 
   options.forEach((btn, index) => {
     btn.textContent = q.options[index];
-    btn.className = "option"; // reset styles
+    btn.className = "option";
     btn.disabled = false;
     btn.onclick = () => checkAnswer(btn, index);
   });
@@ -39,7 +39,7 @@ function loadQuestion() {
 function checkAnswer(btn, selected) {
   const correctIndex = questions[currentQuestion].answer;
 
-  // Disable all options
+  
   options.forEach(o => o.disabled = true);
 
   if (selected === correctIndex) {
@@ -47,7 +47,7 @@ function checkAnswer(btn, selected) {
     score++;
   } else {
     btn.classList.add("wrong");
-    options[correctIndex].classList.add("correct"); // highlight correct
+    options[correctIndex].classList.add("correct"); 
   }
 }
 
