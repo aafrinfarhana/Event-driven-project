@@ -1,26 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Simple Quiz App</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Simple Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="quiz-container">
-    <h2 id="question">Question text</h2>
+    <div class="timer-box">
+        <h1 id="display">00:00</h1>
 
-    <div class="options">
-      <button class="option">Option 1</button>
-      <button class="option">Option 2</button>
-      <button class="option">Option 3</button>
-      <button class="option">Option 4</button>
+        <input type="number" id="minutes" placeholder="Minutes">
+        <input type="number" id="seconds" placeholder="Seconds">
+
+        <br><br>
+
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
     </div>
 
-    <button id="next-btn">Next</button>
-    <p id="score"></p>
-  </div>
+   
+    <script src="script.js"></script>
 
-  <script src="script.js"></script>
 </body>
 </html>
+[11:42 pm, 30/01/2026] Farha: 

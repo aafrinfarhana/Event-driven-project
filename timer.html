@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Countdown Timer</title>
-  <link rel="stylesheet" href="style4.css">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style4.css">
 </head>
 <body>
 
-  <div class="container">
-    <h2>Countdown Timer</h2>
+    <div class="container">
+        <h1>Countdown Timer</h1>
 
-    <input type="number" id="inputTime" placeholder="Enter seconds">
-    <button id="startBtn">Start</button>
+        <div class="timer">
+            <span id="hours">00</span> :
+            <span id="minutes">00</span> :
+            <span id="seconds">00</span>
+        </div>
 
-    <div id="display">00</div>
-  </div>
+        <div class="inputs">
+            <input type="number" id="inputHours" placeholder="Hours" min="0">
+            <input type="number" id="inputMinutes" placeholder="Minutes" min="0" max="59">
+            <input type="number" id="inputSeconds" placeholder="Seconds" min="0" max="59">
+        </div>
 
-  <script src="script4.js"></script>
+        <div class="buttons">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+    </div>
+
+    <script src="script4.js"></script>
 </body>
 </html>
